@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonghyun Park">
+    <script src="converter.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Converts 4 different measurements</h1>
+        <fieldset>
+            <legend>Length Converter</legend>
+            <table>
+                <tr>
+                    <td><input type="radio" name="lengh" id="feet" value="feet">Feet &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="lengh" id="meters" value="meters"> Meters &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="lengh" id="inches" value="inches"> Inches &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="lengh" id="cm" value="cm"> cm &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="lengh" id="yards" value="yards"> Yards &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="lengh" id="kilometers" value="kilometers"> Kilometers &nbsp; &nbsp;
+                        &nbsp; &nbsp;
+                        <input type="radio" name="lengh" id="miles" value="miles"> Miles
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="7"><input id="input_lengh" type="number" value="0"
+                            oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)"></td>
+                </tr>
+            </table>
+            <p id="output_length"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Weight Converter</legend>
+            <table>
+                <tr>
+                    <td><input type="radio" name="weight" id="pounds" value="pounds">Pounds &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="weight" id="ounces" value="ounces"> Ounces &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="weight" id="stones" value="stones"> Stones &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        <input type="radio" name="weight" id="kilograms" value="kilograms"> Kilograms &nbsp; &nbsp;
+                        &nbsp; &nbsp;
+                        <input type="radio" name="weight" id="grams" value="grams"> Grams </td>
+                </tr>
+                <tr>
+                    <td rowspan="5"><input id="input_weight" type="number" value="0"
+                            oninput="WeightConverter(this.value)" onchange="WeightConverter(this.value)"></td>
+                </tr>
+            </table>
+            <p id="output_weight"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Speed Converter</legend>
+            <table>
+                <tr>
+                    <td><input type="radio" name="speed" id="mph" value="mph">MPH &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="speed" id="knots" value="knots">Knots &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="speed" id="kph" value="kph">KPH &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="speed" id="mach" value="mach"> Mach
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4"><input id="input_speed" type="number" value="0" oninput="SpeedConverter(this.value)"
+                            onchange="SpeedConverter(this.value)"></td>
+                </tr>
+            </table>
+            <p id="output_speed"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Temperature Converter</legend>
+            <table>
+                <tr>
+                    <td><input type="radio" name="temperature" id="fahrenheit" value="fahrenheit">Fahrenheit &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="radio" name="temperature" id="kelvin" value="kelvin">Kelvin &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        <input type="radio" name="temperature" id="celsius" value="celsius">Celsius
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3"><input id="input_temperature" type="number" value="0"
+                            oninput="TemperatureConverter(this.value)" onchange="TemperatureConverter(this.value)"></td>
+                </tr>
+            </table>
+            <p id="output_temperature"></p>
+        </fieldset>
+    </div>
+</body>
+
+</html>
