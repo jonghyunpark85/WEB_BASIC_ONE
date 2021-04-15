@@ -1,0 +1,355 @@
+/*----------- Basic ------------*/
+ 
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #122981 url('../img/gradient_bg.jpg') repeat-x;
+}
+
+p { 
+	text-align: justify; 
+	color: #fff; 
+	font-size: 0.7em; 
+	line-height: 1.25em; 
+}
+
+a:link, a:visited { 
+	text-decoration: underline; 
+	color: #a5bcff;	
+}
+
+a:hover, a:active { 
+	text-decoration: none; 
+	color: #ff9600; 
+}
+
+li {
+	text-decoration: none; 
+	list-style: none; 
+	display: block; 
+	color: #fff; 
+}
+
+/*---------Contents layout---------*/
+
+.page-wrapper {
+	display: block;
+	position: relative;
+	width: 500px;
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#zen-intro, #zen-supporting {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 356px;
+	float: left;
+}
+
+footer {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 350px;
+}
+
+.sidebar {
+	display: block;
+	margin: 0px;
+	padding-left: 6px;
+	width: 161px;
+	float: right;
+}
+
+/*---------- background image------------*/
+
+.extra1 {
+	background: url('../img/clouds.jpg') repeat-x;
+	width: 100%;
+	height: 104px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.extra2 {
+	background: url('../img/water_edge.jpg') repeat-x;
+	width: 100%;
+	height: 75px;
+	position: absolute;
+	top: 104px;
+	left: 0px;
+}
+
+.extra3 {
+	background: url('../img/seafloor_bg.jpg') repeat-x;
+	width: 100%;
+	height: 125px;
+	position: absolute;
+	bottom: -1500px;
+	left: 0px;
+}
+
+.extra4 {
+	background: url('../img/seafloor.jpg') no-repeat;
+	width: 100%;
+	height: 426px;
+	position: absolute;
+	bottom: -1500px;
+	left: 0px;
+}
+
+/*-----------left contents-------------*/
+
+header h1 {
+	display: block;
+	background: transparent url('../img/h1.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 100%;;
+	height: 29px;
+	margin: 0px;
+	float: left;
+}
+
+header h2 {
+	background: transparent url('../img/h2.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 167px;
+	height: 12px;
+	float: right;
+	margin-top: 1px;
+}
+
+.summary {
+	display: block;
+	background: transparent url('../img/divider01.jpg') no-repeat;
+	float: left;
+	padding-top: 70px;
+}
+
+
+.summary p:first-child {
+	display: block;
+	background: transparent url('../img/summary.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 355px;
+	height: 49px;
+	margin-top: 10px;
+	float: left;
+}
+
+.preamble {
+	display: block;
+	background: transparent url('../img/divider02.jpg') no-repeat;
+	float: left;
+	padding-top: 70px;
+}
+
+.preamble h3 {
+	display: block;
+	background: transparent url('../img/h3_road.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 355px;
+	height: 18px;
+	margin-top: 10px;
+	float: left;
+}
+
+.explanation {
+	display: block;
+	background: transparent url('../img/divider03.jpg') no-repeat;
+	float: left;
+	padding-top: 70px;
+}
+
+.explanation h3 {
+	display: block;
+	background: transparent url('../img/h3_about.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 355px;
+	height: 18px;
+	margin-top: 10px;
+	float: left;
+}
+
+.participation {
+	display: block;
+	background: transparent url('../img/divider04.jpg') no-repeat;
+	float: left;
+	padding-top: 70px;
+}
+
+.participation h3 {
+	display: block;
+	background: transparent url('../img/h3_participation.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 355px;
+	height: 18px;
+	margin-top: 10px;
+	float: left;
+}
+
+.benefits {
+	display: block;
+	background: transparent url('../img/divider05.jpg') no-repeat;
+	float: left;
+	padding-top: 70px;
+}
+
+.benefits h3 {
+	display: block;
+	background: transparent url('../img/h3_benefits.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 355px;
+	height: 18px;
+	margin-top: 10px;
+	float: left;
+}
+
+.requirements {
+	display: block;
+	background: transparent url('../img/divider06.jpg') no-repeat;
+	float: left;
+	padding-top: 70px;
+}
+
+.requirements h3 {
+	display: block;
+	background: transparent url('../img/h3_requirements.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 355px;
+	height: 18px;
+	margin-top: 10px;
+	float: left;
+}
+
+footer a:link, footer a:visited { 
+	text-decoration: underline; 
+	color: #ff9600;
+	margin-right: 10px;
+}
+
+footer {
+	display: block;
+	float: left;
+}
+
+/*-------------sidebar-------------*/
+
+.sidebar {
+	text-align: justify; 
+	color: #fff; 
+	font-size: 0.75em; 
+	line-height: 1.25em; 
+}
+	
+.wrapper {
+	display: block;
+	float: right;
+	position: absolute;
+	width: 135px;
+	top: 130px;
+	right: 0px;
+}
+
+.wrapper ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.wrapper li a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+
+.design-selection h3 {
+	display: block;
+	background: transparent url('../img/h3_select.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 139px;
+	height: 15px;
+	margin-top: 10px;
+	float: left;
+}
+
+.design-selection li {
+	line-height: 15px;
+	padding: 5px 0px;
+	border-bottom: 1px solid #333;
+}
+
+
+.design-selection .design-name {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.design-selection .designer-name {
+	display: inline;
+	color: #ff9600;
+}
+
+.design-archives h3 {
+	display: block;
+	background: transparent url('../img/h3_archives.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 139px;
+	height: 15px;
+	margin-top: 20px;
+	float: left;
+}
+
+.zen-resources h3 {
+	display: block;
+	background: transparent url('../img/h3_resources.gif') no-repeat top left;
+	text-indent: -10000px;
+	width: 139px;
+	height: 15px;
+	margin-top: 20px;
+	float: left;
+}
+
+/*----------fishes--------------*/
+
+.extra5 {
+	background: url('../img/sunlight.jpg') no-repeat;
+	width: 315px;
+	height: 316px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.extra5:after {
+	display: block;
+	content: " ";
+	background: transparent url('../img/fish_top.gif') no-repeat;
+	width: 180px;
+	height: 80px;
+	position: absolute;
+	top: 200px;
+	left: 20px;
+}
+
+.extra6 {
+	background: url('../img/fish01.jpg') no-repeat;
+	width: 239px;
+	height: 124px;
+	position: absolute;
+	top: 1200px;
+	right: 50px;
+}
+
+	.extra6:after {
+	display: block;
+	content: " ";
+	background: transparent url('../img/fish_bottom.gif') no-repeat;
+	width: 224px;
+	height: 110px;
+	position: absolute;
+	bottom: -700px;
+	right: 150px;
+}

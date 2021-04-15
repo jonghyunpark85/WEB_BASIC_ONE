@@ -1,0 +1,146 @@
+/*----------- Basic ------------*/
+ 
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: Arial,Helvetica,sans-serif;
+	background: #122981 url('../img/gradient_bg.jpg') repeat-x;
+	margin: 0px;
+}
+
+p { 
+	text-align: justify; 
+	color: #fff; 
+	font-size: 0.7em; 
+	line-height: 1.25em; 
+}
+
+a:link, a:visited { 
+	text-decoration: underline; 
+	color: #a5bcff;	
+}
+
+a:hover, a:active { 
+	text-decoration: none; 
+	color: #ff9600; 
+}
+
+li {
+	text-decoration: none; 
+	list-style: none; 
+	display: block; 
+	color: #fff; 
+}
+
+.page-wrapper {
+	width: 536px;
+	margin: 0 auto;
+	position: relative; /*.sidebar 기준점*/
+	margin-top: 200px;
+	z-index: 1;
+}
+
+/* 
+	z-index 
+	1: wrapper를 올려서 빛떨어지는 것 위에 둠...
+*/
+	
+#zen-intro, #zen-supporting {
+	width: 356px;
+}
+
+.sidebar {
+	width: 141px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-color: skyblue;
+}
+
+/* cloud */
+
+.extra1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 104px;
+	background: yellow url('../img/clouds.jpg');
+}
+
+/* 구름 밑에 물 */
+
+.extra2 {
+	position: absolute;
+	left: 0px;
+	top: 104px; /*구름의 높이 : 구름 바로 아래있음 */
+	width: 100%;
+	height: 75px;
+	background: yellow url('../img/water_edge.jpg');
+}
+
+/* 왼쪽 상단에 빛내리 쬐는 그림 */
+
+.extra3 {
+	position: absolute;
+	left: 0px;
+	top: 0px; 
+	width: 315px;
+	height: 316px;
+	background: yellow url('../img/sunlight.jpg');
+}
+
+/*  philiys 
+
+.extra4 {
+	xposition: absolute;
+	left: 0px;
+	bottom: 0px; 
+	width: 100%;
+	height: 125px;
+	background: yellow url('../img/seafloor_bg.jpg');
+}
+
+*/
+
+/* CSS Zen Garden Title */
+
+#zen-intro h1 {
+	background: transparent url('../img/h1.gif') left top no-repeat;
+	width: 355px;
+	height: 29px;
+	text-indent: -10000px;
+}
+
+/* The Beauty of CSS Design */
+
+#zen-intro h2 {
+	background: transparent url('../img/h2.gif') right top no-repeat;
+	height: 12px;
+	text-indent: -10000px;
+}
+
+/* 소용돌이 */
+
+#zen-intro header {
+	height: 103px; /*h1+h2+소용돌이 +margin 20*/
+	background: transparent url('../img/divider01.jpg') center bottom no-repeat;
+}
+
+#zen-summary p:first-child {
+	background: transparent url('../img/summary.gif') no-repeat;
+	text-indent: -10000px;
+	width: 356px;
+	height: 49px;
+}
+
+
+#zen-summary p:last-child {
+	margin: 20px 0px;
+}
+
+
+
