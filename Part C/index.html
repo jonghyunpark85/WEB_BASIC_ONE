@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonghyun Park">
+    <script src="array.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Part A</title>
+</head>
+<body>
+    <div id="container">
+        <form id="urllist" method="post" onsubmit="addURLlist(); return false">
+            <fieldset>
+                <legend>Add your favourite web pages</legend>
+                <table>
+                    <tr>
+                        <td>Enter your URL:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="url" id="url" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Add to List"></td>
+                    </tr>
+                    <tr>
+                        <td id="list"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+     </div>
+    
+</body>
+</html>

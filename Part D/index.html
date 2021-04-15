@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jonghyun Park">
+    <script src="customerlist.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <title>Western Cascade Finance</title>
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <img src="logo.jpeg" alt="logo">
+            <h1>Western Cascade Finance</h1>
+        </div>
+
+    </header>
+    <div class="container">
+        <form id="customerlist" onsubmit="customerlist(); return false">
+            <fieldset>
+                <legend> New applciation form </legend>
+                <table>
+                    <tr>
+                        <td>Currnet Date</td>
+                        <td id="time"></td>
+                    </tr>
+                    <tr>
+                        <td>First name: </td>
+                        <td><input type="text" id="firstname" pattern="[A-Za-z -]{1,25}" placeholder="Enter First name"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td>Last name: </td>
+                        <td><input type="text" id="lastname" pattern="[A-Za-z -]{1,25}" placeholder="Enter Last name"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td>Street Address:</td>
+                        <td><input type="text" id="address" placeholder="Enter address"></td>
+                    </tr>
+                    <tr>
+                        <td>Postal code: </td>
+                        <td><input type="text" id="postalcode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
+                                placeholder="Enter postal code (A0A 1B1)"></td>
+                    </tr>
+                    <tr>
+                        <td>Province: </td>
+                        <td><select id="province">
+                                <option value="1">Alberta</option>
+                                <option value="2">British Columbia</option>
+                                <option value="3">Manitoba</option>
+                                <option value="4">New Bruswick</option>
+                                <option value="5">Newfoundland</option>
+                                <option value="6">Nova Scotia</option>
+                                <option value="7">Ontario</option>
+                                <option value="8">Prince Edward Island</option>
+                                <option value="9">Quebec</option>
+                                <option value="10">USA</option>
+                                <option value="11">Mexico</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Country: </td>
+                        <td><select id="country">
+                                <option value="1">Canada</option>
+                                <option value="2">USA</option>
+                                <option value="3">Mexico</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Telephone Number: </td>
+                        <td> <select id="p_b">
+                                <option value="1">Personal</option>
+                                <option value="2">Business</option>
+                            </select><br>
+                            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" id="email" placeholder="example@site.net"
+                                pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> Are they current clients (Yes or No)? </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="radio" name="yesno" value="yes" size="10" checked>Yes &nbsp; &nbsp; &nbsp;
+                            &nbsp;
+                            <input type="radio" name="yesno" value="no" size="10">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> Gender (Male or Female)? </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="radio" name="gender" value="male" size="10" checked>Male &nbsp; &nbsp; &nbsp;
+                            &nbsp;
+                            <input type="radio" name="gender" value="femail" size="10">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age (Above 18 to Under 75)?</td>
+                        <td><input type="number" name="age" min="18" max="75" value="18"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> Own or Rent Home? </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="radio" name="home" value="own" size="10" checked>Own &nbsp; &nbsp; &nbsp;
+                            &nbsp;
+                            <input type="radio" name="home" value="rent" size="10">Rent
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Annual Gross Income (Minimum is 0)?</td>
+                        <td><input type="number" name="gross" min="0" step="5000" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">If they own any of the following </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="following" value="vehicle" size="10" checked>Vehicle &nbsp;
+                            &nbsp; &nbsp; &nbsp;
+                            <input type="checkbox" name="following" value="rrsp" size="10">RRSP &nbsp; &nbsp; &nbsp;
+                            &nbsp;
+                            <input type="checkbox" name="following" value="tfsa" size="10">TFSA &nbsp; &nbsp; &nbsp;
+                            &nbsp;
+                            <input type="checkbox" name="following" value="rrif" size="10">RRIF
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="button">
+                            <input type="submit" value="SEND">
+                            <input type="reset" value="CLEAR">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="list"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

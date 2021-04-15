@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Anton|Dancing+Script|Josefin+Sans|Lobster|Rubik&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+div {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+fieldset {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 14pt;
+    width: 80%;
+    margin: 100px auto;
+    border-radius: 30px;
+    border: 1px dotted grey;
+    background-color: ivory;
+}
+
+legend {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 35pt;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: black;
+}
+
+table {
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+table td {
+    text-align: left;
+    font-size: 12pt;
+    padding: 20px;
+}
