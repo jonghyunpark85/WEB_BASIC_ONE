@@ -1,0 +1,524 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*---------------basic-----------------*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	width:100%;
+	font-family: 'Nanum Gothic', serif;
+	text-align: justify; 
+	color: #333; 
+	font-size: 0.80em; 
+	line-height: 1.25em;
+}	
+
+a {
+	margin: 0px;
+	padding: 0px;
+	}
+
+a:link, a:visited { 
+	text-decoration: none; 
+	color: #333;	
+}
+
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: blue; 
+}
+
+ul {
+	list-style: none;
+}
+
+/*--------------layout--------------------*/
+
+#full-wrap {
+	display: block;
+	width: 940px;
+	font-family: 'Nanum Gothic', serif;
+	color: #333;
+	line-height: 19px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 100%;
+	height: 147px;
+	background-color: #fff;
+}
+
+#container {
+	display: block;
+	width: 100%;
+	height: 450px;
+}
+
+#footer {
+	width: 940px;
+	height: 67px;
+	margin: 5px auto 0px auto;
+	background-color: yellow;
+}
+
+/*-----------top-nav-----------------*/
+
+#topnav {
+	display: block;
+	width: 100%;
+	height: 33px;
+	background-color:#f2f4f7;
+	border-bottom: 2px solid #dee1e6;
+}
+
+.topnav-left {
+	float: left;
+	width: 80px;
+	height: 33px;
+	background: transparent url('../img/mnu.png') 0 -1600px;
+	text-indent: -10000px;
+}
+
+.topnav-right	{
+	float: right;
+	height: 33px;
+}
+
+.topnav-right ul li {
+	float: left;
+	height: 33px;
+	text-indent: -10000px;
+	}
+	
+.topnav-right ul .tnr01 { width: 29px;	background: transparent url('../img/mnu.png') 0 -60px;}
+.topnav-right ul .tnr02 {	width: 30px;	background: transparent url('../img/mnu.png') 0 -110px;}
+.topnav-right ul .tnr03 {	width: 41px;	background: transparent url('../img/mnu.png') 0 -160px;}
+.topnav-right ul .tnr04 {	width: 30px;	background: transparent url('../img/mnu.png') 0 -210px;}
+.topnav-right ul .tnr05 {	width: 31px;	background: transparent url('../img/mnu.png') 0 -260px;}
+.topnav-right ul .tnr06 {	width: 29px;	background: transparent url('../img/mnu.png') 0 -560px;}
+.topnav-right ul .tnr07 {	width: 12px;	background: transparent url('../img/mnu.png') 0 -360px;}
+.topnav-right ul .tnr08 {	width: 30px;	background: transparent url('../img/mnu.png') 0 -410px;}
+.topnav-right ul .tnr09 {	width: 30px;	background: transparent url('../img/mnu.png') 0 -460px;}
+.topnav-right ul .tnr10 {	width: 41px;	background: transparent url('../img/mnu.png') 0 -510px;}
+.topnav-right ul .tnr11 {	width: 31px;	background: transparent url('../img/mnu.png') 0 -1690px;}
+.topnav-right ul .tnr12 {	width: 41px;	background: transparent url('../img/mnu.png') 0 -610px;}
+.topnav-right ul .tnr13 {	width: 40px;	background: transparent url('../img/mnu.png') 0 -660px;}
+.topnav-right ul .tnr14 {	width: 49px;	background: transparent url('../img/mnu.png') 0 -710px;}
+.topnav-right ul .tnr15 {	width: 12px;	background: transparent url('../img/mnu.png') 0 -360px;}
+.topnav-right ul .tnr16 {	width: 49px;	background: transparent url('../img/mnu.png') 0 -810px;}
+.topnav-right ul .tnr17 {	width: 56px;	background: transparent url('../img/mnu.png') 0 -860px;}
+.topnav-right ul .tnr18 {	width: 39px;	background: transparent url('../img/mnu.png') 0 -910px;}
+.topnav-right ul .tnr19 {	width: 67px;	background: transparent url('../img/mnu.png') 0 -960px;}
+
+/*--------- title-bar ----------*/
+
+#title-bar {
+	height: 112px;
+	width: 629px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.logo {
+	background: transparent url('../img/logo.png');
+	width: 148px;
+	height: 112px;
+	text-indent: -10000px;
+}
+
+/*-------- img로 설정해도 된다. 오히려 img태그를 사용할 때 웹접근성이 좋아진다---*/
+
+.search {
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 148px;
+}
+
+.search .input {
+	display: block;
+	background: transparent url('../img/bg.png')0 0;
+	width: 420px;
+	height: 39px;
+	text-indent: -10000px;
+}
+
+.search .input-bg {
+	display: block;
+	background: transparent url('../img/dec.png')0 -200px;
+	width: 27px;
+	height: 30px;
+	position: absolute;
+	top: 5px;
+	left: 400px;
+	text-indent: -10000px;
+}
+
+.search ul {
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.search ul li{
+	float: left;
+	padding-right: 15px;
+}
+
+.search-button {
+	display: block;
+	background: transparent url('../img/dec.png') 0 0;
+	width: 51px;
+	height: 39px;
+	position: absolute;
+	top: 30px;
+	right: 0px;
+	text-indent: -10000px;
+}
+
+/*-----container-left------------*/
+
+#container-left {
+	width: 655px;
+	height: 340px;
+	float: left;
+}
+
+
+
+.top-banner {
+	width: 100%;
+	height: 105px;
+	background-color: #fff;
+	margin-bottom: 5px;
+}
+
+.tb01 {
+	width: 430px;
+	height: 105px;
+	float: left;
+}
+
+.tb02 {
+	width: 220px;
+	height: 105px;
+	float: right;
+	background: transparent url('../img/1.png');
+	text-indent: -10000px;
+}
+
+.main-contents {
+	width: 100%;
+	border: 1px solid #999;
+	background-color: #fff;
+	float: left;
+	position: relative;
+}
+
+.maintop-button {
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #999;
+	text-indent: -10000px;
+}
+
+.maintop-button li{
+	float: left;
+}
+
+.mb01 {width: 109px; height: 35px;	background: transparent url('../img/bg.png') -200px -600px; border-right: 1px solid #999;}
+.mb02 {width: 108px; height: 35px; background: transparent url('../img/bg.png') 0 -650px; border-right: 1px solid #999;}
+.mb03 {width: 108px; height: 35px; background: transparent url('../img/bg.png') 0 -700px; border-right: 1px solid #999;}	
+.mb04 {width: 108px; height: 35px; background: transparent url('../img/bg.png') 0 -750px; border-right: 1px solid #999;}	
+.mb05 {width: 108px; height: 35px; background: transparent url('../img/bg.png') 0 -800px; border-right: 1px solid #999;}	
+.mb06 {width: 108px; height: 35px; background: transparent url('../img/bg.png') 0 -850px;}		
+
+.main-left {
+	width: 428px;
+	height: 280px;
+	margin-top: 23px;
+	margin-bottom: 30px;
+	margin-left: 29px;
+	float: left;
+	background-color: #fff;
+	position: relative;
+}
+
+.left-categories {
+	width: 100%;
+	padding-bottom: 19px;
+}
+
+.left-categories li {
+	float: left;
+	padding-right: 20px;
+	text-indent: -10000px;
+}
+
+.lca01 {width: 22px; height: 13px;	background: transparent url('../img/mnu.png') -100px 0;}
+.lca02 {width: 22px; height: 13px;	background: transparent url('../img/mnu.png') -100px -50px;}
+.lca03 {width: 33px; height: 13px;	background: transparent url('../img/mnu.png') -100px -100px;}
+.lca04 {width: 22px; height: 13px;	background: transparent url('../img/mnu.png') -100px -150px;}
+
+.left-image {
+	width: 113px;
+	float: left;
+}
+
+.left-image li {
+	font-size: 0.90em;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.li01 {width: 113px; height: 68px;	background: transparent url('../img/2.png');}
+.li02 {width: 113px; height: 50px;}
+.li03 {width: 113px; height: 68px;	background: transparent url('../img/3.png');}
+.li04 {width: 113px; height: 50px;}
+
+.right-contents {
+	width: 303px;
+	float: right;
+}
+
+.contents01 {
+	width: 100%;
+	height: 118px;
+}
+
+.contents01 li{
+	padding-bottom: 2px;
+}
+
+.contents02 {
+	width: 100%;
+	height: 118px;
+}
+
+.contents02 li{
+	padding-bottom: 2px;
+}
+
+.paging {
+	display: block;
+	position: absolute;
+	bottom: 5px;
+	height: 21px;
+	left: 135px;
+}
+
+.paging li {
+	float: left;
+	margin-right: 10px;
+}
+
+.pa01 {width: 32px; height: 21px;	background: transparent url('../img/dec.png') 0 -450px;}
+.pa02 {width: 32px; height: 21px;	background: transparent url('../img/dec.png') -32px -450px;}
+
+.paging li a {
+	color: #999;
+}
+
+.paging li strong {
+	color: #000000;
+	font-weight: bold;
+}
+
+.main-right {
+	width: 196px;
+	height: 280px;
+	background-color: #fff;;
+	margin-top: 23px;
+	position: relative;
+	float: right;
+}
+
+.right-categories {
+	width: 100%;
+	height: 13px;
+}
+
+.right-categories li {
+	float: left;
+	margin-right: 10px;
+}
+
+.rca01 {width: 60px; height: 13px;	background: transparent url('../img/mnu.png') -100px -900px; }
+.rca02 {width: 10px; height: 13px; border-right: 1px solid #999;} 
+.rca03 {margin-left: 10px; width: 50px; height: 13px;	background: transparent url('../img/mnu.png') -100px -1650px; }
+
+.issue {
+	width: 100%;
+}
+
+.issue li {
+	width: 100%;
+	float: left;
+}
+
+.issue li ul {
+	float: left;
+	width: 100%;
+	height: 13px;
+	line-height: 19px;
+}
+
+
+.right-main-bottom {
+	display: block;
+	position: absolute;
+	bottom: 5px;
+	height: 21px;
+	left: 0px;
+}
+
+.right-main-bottom li {
+	float: left;
+	font-size: 0.90em;
+}
+/*---------container right---------*/
+
+#container-right {
+	width: 280px;
+	float: right;
+}
+
+/*---------- login -------------*/
+
+.login {
+	width: 280px;
+	height: 105px;
+	background: transparent url('../img/bg.png') 0 -200px;
+	position: relative;
+}
+
+.login-button { 
+	width: 51px; 
+	height: 54px; 
+	background: #f1f3f5 url('../img/dec.png') 0 -50px; 
+	position: absolute; 
+	top:15px;
+	left: 172px;
+	border-bottom: 1px solid #999;
+}
+
+
+.login ul {
+	line-height: 11px;
+	position: absolute;
+	left: 12px;
+	bottom: 12px;
+}
+
+.login ul li {
+	float: left;
+	font-size: 11px;
+}
+
+.email {
+	position: absolute;
+	top: 20px;
+	left: 27px;
+	word-spacing: 0.30em;
+}
+
+.pins {
+	position: absolute;
+	top: 45px;
+	left: 27px;
+}
+
+.idsave {
+	padding-left: 3px;
+	padding-right: 5px;
+}
+
+.join, .find {
+	padding-right: 5px;
+	padding-left: 10px;
+}
+
+/*---------banner-right--------------*/
+
+.banner-right {
+	width: 280px;
+	height: 150px;
+	background-image: url('../img/aircon.png');
+	margin-top: 5px;
+}
+
+.banner-right-bottom {
+	width: 278px;
+	height: 185px;
+	margin-top: 5px;
+	background-color: #fff;
+	border: 1px solid #999;
+	position: relative;
+}
+
+.banner-right-bottom li{
+	float: left;
+}
+
+.brb01 {
+	width: 20px;
+	height: 20px;
+	background: transparent url('../img/dec.png') -200px -500px; 
+	position: absolute;
+	top: 55px;
+	left: 10px;
+}
+
+.brb02 { 
+	width: 212px;
+	height: 105px;
+	background-image: url('../img/market.png');
+	position: absolute;
+	top: 5px;
+	left: 30px;
+}
+
+.brb03 {
+	width: 20px;
+	height: 20px;
+	background: transparent url('../img/dec.png') -200px -550px; 
+	position: absolute;
+	top: 55px;
+	right: 10px;
+}	
+
+.brb04  {
+	width: 100%;
+	border-top: 1px solid #999;
+	position: absolute;
+	top: 135px;
+}
+
+.brb04 p {
+	font-size: 0.90em;
+ 	position: absolute;
+ 	left: 20px;
+ 	top: 5px;
+}
+
+/*----------footer----------------*/
+
+
+	
+
+.notice li {
+	float: left;
+}
+
+.shortcut li{
+	float: left;
+}
+
+.information li{
+	float: left;
+}
